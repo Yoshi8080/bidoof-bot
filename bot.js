@@ -5,12 +5,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-  bot.user.setStatus('available') // Can be 'available', 'idle', 'dnd', or 'invisible'
-    bot.user.setPresence({
-        game: {
-            name: 'Test',
-            type: 0
-        }
+client.user.setPresence({ game: { name: 'with discord.js' }, status: 'idle' });
 });
 
 client.on('message', message => {
