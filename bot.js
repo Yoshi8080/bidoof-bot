@@ -9,10 +9,14 @@ client.user.setPresence({ game: { name: 'with Bidoofs' ,type: 0 }, status: 'avai
 });
 
 client.on('message', message => {
-if(message.content === "?pray") {
-   const ayy = client.emojis.get(400884080759144449);
-message.reply(` has prayed to Rainbow Bidoof! :pray: ${ayy}`);
-}
+if(message.content === "doof!pray") {
+const ayy = client.emojis.find("name", "Ran_Doof2");
+//message.reply(` has prayed to Rainbow Bidoof! :pray: ${ayy}`);
+   
+    message.channel.send({embed: {
+   color: 3447003,
+footer: " has prayed to Rainbow Bidoof! :pray: ${ayy}"
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
