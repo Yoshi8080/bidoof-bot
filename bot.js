@@ -7,9 +7,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('ready', () => {
 client.user.setActivity('ROBLOX', { type: 'Playing Bidoof Sim' });
-});
 
 client.on('message', message => {
 if(message.content === "?pray") {
