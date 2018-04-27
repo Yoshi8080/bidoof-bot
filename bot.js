@@ -13,7 +13,7 @@ if(message.content === "?pray") {
    const ayy = client.emojis.find("name", "Ran_Doof2");
 message.channel.send({embed: {
   color: 3447003,
-  description: "(` has prayed to Rainbow Bidoof! :pray: ${ayy}`"
+  description: "(` has prayed to Rainbow Bidoof!` :pray: ${ayy}"
 }});    
 }
 });
