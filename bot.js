@@ -17,7 +17,7 @@ client.on('ready', () => {
 client.on('message', message => {
 if(message.content === "?pray") {
    const ayy = client.emojis.find("name", "Ran_Doof2");
-   message.reply(`prayed to Rainbow Bidoof! :pray: ${ayy}`);
+   message.reply(` has prayed to Rainbow Bidoof! :pray: ${ayy}`);
 }
 });
 
