@@ -8,17 +8,32 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('message', message => {
-    if (message.content === 'doof') {
-   const ayy = client.emojis.find("name", "Ran_Doof2");
-   message.reply(`:pray:` ${ayy}`);
-  	}
-});
 if(!message.content.startsWith('doof')) return;
   if(cooldown.has(message.author.id)){
     message.delete();
     return message.reply("You have to wait 5 seconds before command.")
 }
+
+client.on('message', message => {
+if(message.content === "ayy") {
+   const ayy = client.emojis.find("name", "ayy");
+   message.reply(`:pray: ${ayy}`);
+}
+});
+
+
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.on('ready', () => {
+    console.log('I am ready!');
+});
+
+client.on('message', message => {
+    if (message.content === 'ping') {
+    	message.reply('pong');
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
