@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 client.on('ready', () => {
-client.user.setGame("Bidoof Simulator");
+client.user.setActivity('ROBLOX', { type: 'Playing Bidoof Sim' });
 });
 
 client.on('message', message => {
