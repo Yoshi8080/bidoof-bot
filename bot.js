@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 //let cdseconds = 5;
 //const talkedRecently = new Set();
-
+client.setGame("Praying to rainbow Bidoof; Playing Bidoof Simulator");
 client.on('ready', () => {
     console.log('I am ready!');
 });
