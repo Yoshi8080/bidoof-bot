@@ -14,6 +14,7 @@ client.on('message', message => {
    message.reply(`:pray:` ${ayy}`);
   	}
 });
+if(!message.content.startsWith('doof')) return;
   if(cooldown.has(message.author.id)){
     message.delete();
     return message.reply("You have to wait 5 seconds before command.")
