@@ -13,6 +13,7 @@ if(message.content === "doof!pray") {
 const ayy = client.emojis.find("name", "Ran_Doof2");
 message.reply(` has prayed to Rainbow Bidoof! :pray: ${ayy}`);
     }
+   
 });
 
 // THIS  MUST  BE  THIS  WAY
