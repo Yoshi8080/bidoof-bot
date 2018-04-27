@@ -6,9 +6,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'pray') {
+    if (message.content === 'doof') {
    const ayy = client.emojis.find("name", "Ran_Doof2");
-   message.reply(:pray: `${ayy}`);
+   message.reply(`:pray:`,`${ayy}`);
   	}
 });
 
