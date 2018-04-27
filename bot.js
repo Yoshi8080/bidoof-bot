@@ -11,10 +11,7 @@ client.user.setPresence({ game: { name: 'with Bidoofs' ,type: 0 }, status: 'avai
 client.on('message', message => {
 if(message.content === "?pray") {
    const ayy = client.emojis.get(400884080759144449);
-message.channel.send({embed: {
-  color: 3447003,
-  content: "Testing123" //'has prayed to Rainbow Bidoof! :pray: ${ayy}'
-}});    
+message.reply(` has prayed to Rainbow Bidoof! :pray: ${ayy}`);
 }
 });
 
