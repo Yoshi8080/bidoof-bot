@@ -13,6 +13,7 @@ if(!message.content.startsWith('doof')) return;
     message.delete();
     return message.reply("You have to wait 5 seconds before command.")
 }
+});
 
 client.on('message', message => {
 if(message.content === "ayy") {
