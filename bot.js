@@ -12,5 +12,10 @@ message.reply(message.mentions.members.first, `has prayed` ${ayy});
 }
 }
 
+if(message.content === "ayy") {
+   const ayy = client.emojis.find("name", "Ran_Doof2");
+   message.reply(`${ayy} LMAO`);
+}
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
