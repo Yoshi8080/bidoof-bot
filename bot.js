@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-let cooldown = new Set();
 let cdseconds = 5;
 const talkedRecently = new Set();
 
