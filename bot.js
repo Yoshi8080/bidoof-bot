@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 //let cdseconds = 5;
 //const talkedRecently = new Set();
-client.user.setGame('game here !')
+client.user.setGame('game here !');
 client.on('ready', () => {
     console.log('I am ready!');
 });
