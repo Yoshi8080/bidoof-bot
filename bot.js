@@ -1,11 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-//let cdseconds = 5;
-//const talkedRecently = new Set();
-client.user.setGame('game here !');
-client.on('ready', () => {
-    console.log('I am ready!');
-});
+
+client.user.setGame("Praying to rainbow Bidoof; Playing Bidoof Simulator");
+ client.on('ready', () => {
+     console.log('I am ready!');
+ });
 
 //if(!message.content.startsWith('doof')) return;
 //  if(cooldown.has(message.author.id)){
@@ -22,4 +21,3 @@ if(message.content === "?pray") {
 });
 
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
