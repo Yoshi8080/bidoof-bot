@@ -17,14 +17,12 @@ client.on('message', message => {
 if(message.content === "doof!pray") {
 const ayy = client.emojis.find("name", "Ran_Doof2");
 message.reply(` has prayed to Rainbow Bidoof! :pray: ${ayy}`);
-
+});
         talkedRecently.add(msg.author.id);
         setTimeout(() => {
           // Removes the user from the set after a minute
           talkedRecently.delete(msg.author.id);
         }, 60000);
-    }
-
     }
    
 });
