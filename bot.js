@@ -1,7 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const talkedRecently = new Set();
-
 
 client.on('ready', () => {
     console.log('I am ready!');
