@@ -15,5 +15,11 @@ message.reply(` has prayed to Rainbow Bidoof! :pray: ${ayy}`);
      } 
 });
  
+client.on('message', message => {
+if(message.content === "doof!server") {
+message.reply(`Here's an invite to Bidoof Simulator: https://discord.gg/D2FSFxf`);
+     } 
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
