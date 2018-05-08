@@ -27,5 +27,11 @@ message.reply(`Here's a shiny bidoof: https://play.pokemonshowdown.com/sprites/x
      } 
 });
 
+client.on('message', message => {
+if(message.content === "doof!rainbow") {
+message.reply(`Here's a rainbow bidoof: https://cdn.discordapp.com/emojis/400884080759144449.png?v=1`);
+     } 
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
