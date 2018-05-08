@@ -35,7 +35,7 @@ message.reply(`Here's a rainbow bidoof: https://cdn.discordapp.com/emojis/400884
 
 client.on('message', message => {
 if(message.content === "doof!define") {
-message.reply(`Bidoof is a brown, rodent-like Pokémon with four short legs. It has a short, dark brown snout and a small, red nose.`);
+message.reply(`Bidoof is a brown, rodent-like Pokémon with four short legs. It has a short, dark brown snout and a small, red nose. https://play.pokemonshowdown.com/sprites/xyani/bidoof.gif`);
      } 
 });
 
