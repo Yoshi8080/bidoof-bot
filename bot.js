@@ -21,5 +21,11 @@ message.reply(`Here's an invite to Bidoof Simulator: https://discord.gg/D2FSFxf`
      } 
 });
 
+client.on('message', message => {
+if(message.content === "doof!shiny") {
+message.reply(`Here's a shiny bidoof: https://play.pokemonshowdown.com/sprites/xyani-shiny/bidoof.gif`);
+     } 
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
