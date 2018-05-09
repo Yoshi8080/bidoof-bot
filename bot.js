@@ -39,5 +39,11 @@ message.reply(`*Bidoof is a brown, rodent-like Pokémon with four short legs. It
      } 
 });
 
+client.on('message', message => {
+if(message.content === "doof!help") {
+message.reply(`Commands: **doof!pray** - Prays to Rainbow Bidoof ; **doof!server** - Discord invite to bot's origin ; **doof!shiny** - Gets bidoof shiny sprite ; **doof!rainbow** - Returns rainbow bidoof ; **doof!define** - Returns info in bidoof ; **doof!help** - Gets commands`);
+     } 
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
