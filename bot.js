@@ -40,8 +40,14 @@ message.reply(`*Bidoof is a brown, rodent-like Pokémon with four short legs. It
 });
 
 client.on('message', message => {
+if(message.content === "doof!history") {
+message.reply(`*There once was a bidoof named Ranbow. He was a powerful god. He fell in the hands of Ran, who’s thought to wield some power inside. Bidoof showed his past. Yoshi noticed, then he began a simulator. He called up Ran so he can see his creation. He loves it and he begins to help. During that time, the region they were in was slowly drifting. Bidoof was fighting and all seemed lost. Roria was then, struck by a meteor named DMCA. Bidoof was upon that land and his fateful demise occurred.*`);
+     } 
+});
+
+client.on('message', message => {
 if(message.content === "doof!help") {
-message.reply(`Commands: **doof!pray** - Prays to Rainbow Bidoof ; **doof!server** - Discord invite to bot's origin ; **doof!shiny** - Gets bidoof shiny sprite ; **doof!rainbow** - Returns rainbow bidoof ; **doof!define** - Returns info in bidoof ; **doof!help** - Gets commands`);
+message.reply(`Commands: **doof!pray** - Prays to Rainbow Bidoof ; **doof!server** - Discord invite to bot's origin ; **doof!shiny** - Gets bidoof shiny sprite ; **doof!rainbow** - Returns rainbow bidoof ; **doof!define** - Returns info in bidoof ; **doof!help** - Gets commands ; **doof!history** - rainbow bidoof history`);
      } 
 });
 
