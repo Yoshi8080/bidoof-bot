@@ -2,8 +2,14 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
  
  const rando_messages = [
-'*You found a normal bidoof*',
-'*You found a shiny bidoof*',
+'*has found a Normal Bidoof*',
+'*has found a Shiny Bidoof*',
+'*has found a Rainbow Bidoof*',
+'*has found a Necrozdoof*',
+'*has found a Bidoofeus*',
+'*has fled from a BW Known*',
+'*has found a Boxling, what?*',
+'*has found TheConfidentDiamond for only a second.*',
 ]
  
 client.on('ready', () => {
