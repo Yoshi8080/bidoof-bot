@@ -1,7 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
  
- 
+ const rando_messages = [
+'*You found a normal bidoof*',
+'*You found a shiny bidoof*',
+]
  
 client.on('ready', () => {
     console.log('I am ready!');
@@ -48,6 +51,12 @@ message.reply(`*There once was a bidoof named Ranbow. He was a powerful god. He 
 client.on('message', message => {
 if(message.content === "doof!help") {
 message.reply(`Commands: **doof!pray** - Prays to Rainbow Bidoof ; **doof!server** - Discord invite to bot's origin ; **doof!shiny** - Gets bidoof shiny sprite ; **doof!rainbow** - Returns rainbow bidoof ; **doof!define** - Returns info in bidoof ; **doof!help** - Gets commands ; **doof!history** - rainbow bidoof history`);
+     } 
+});
+
+client.on('message', message => {
+if(message.content === "doof!help") {
+message.reply(rando_messages[Math.floor(Math.random() * rando_messages.length)]);
      } 
 });
 
