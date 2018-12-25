@@ -55,7 +55,7 @@ message.reply(`Commands: **doof!pray** - Prays to Rainbow Bidoof ; **doof!server
 });
 
 client.on('message', message => {
-if(message.content === "doof!help") {
+if(message.content === "doof!search") {
 message.reply(rando_messages[Math.floor(Math.random() * rando_messages.length)]);
      } 
 });
