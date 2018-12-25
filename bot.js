@@ -17,7 +17,7 @@ message.reply(` has prayed to Rainbow Bidoof! :pray: ${ayy}`);
  
 client.on('message', message => {
 if(message.content === "doof!server") {
-message.reply(`Here's an invite to Bidoof Simulator: https://discord.gg/D2FSFxf`);
+message.reply(`Here's an invite to Bidoof Color Chaos Server: https://discord.gg/D2FSFxf`);
      } 
 });
 
