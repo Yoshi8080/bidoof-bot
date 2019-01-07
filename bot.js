@@ -69,7 +69,7 @@ message.reply(rando_messages[Math.floor(Math.random() * rando_messages.length)])
 
 client.on('message', message => {
 if(message.content === "doof!walk") {
-const walk = client.emojis.find("name", "BidoofWalkimg");
+const walk = client.emojis.find("name", "BidoofWalking");
 message.reply(` has walked their Bidoof! ${walk}`);
      } 
 });
