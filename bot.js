@@ -69,7 +69,7 @@ message.reply(rando_messages[Math.floor(Math.random() * rando_messages.length)])
 
 client.on('message', message => {
 if(message.content === "doof!walk") {
-message.reply(`walked their bidoof <a:BidoofWalking:525435561012494346> `;
+message.reply(`walked their bidoof `;
      } 
 });
 
