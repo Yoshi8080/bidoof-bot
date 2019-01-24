@@ -76,7 +76,7 @@ message.reply(rando_messages[Math.floor(Math.random() * rando_messages.length)])
 
 client.on('message', message => {
 if(message.content === "doof!walk") {
-message.reply(` has walked their Bidoof! <a:BidoofWalking:525435561012494346>`);
+message.reply(` has walked their Bidoof! https://cdn.discordapp.com/emojis/525435561012494346.gif?v=1`);
      } 
 });
 // THIS  MUST  BE  THIS  WAY
